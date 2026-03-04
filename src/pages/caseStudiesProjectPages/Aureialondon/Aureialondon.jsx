@@ -1,6 +1,46 @@
 import React from "react";
 import aboutHeroBg from "/src/assets/images/Home/bg-home2.png";
 import { ArrowUpRight } from "lucide-react";
+import RelatedCaseStudies from "../../../components/RelatedCaseStudies/RelatedCaseStudies";
+import { Link } from "react-router-dom";
+// Data Array
+const caseStudyData = [
+  {
+    title: "Hie",
+    logo: "/src/assets/images/BM-WHITE-logo.png",
+    image: "/src/assets/images/PortfolioImages/develpment/aureialondon.png",
+    tags: ["Targeted Marketing", "Content Creation", "Website Development"],
+    link: "/case-study/hie",
+  },
+  {
+    title: "Dekoder",
+    logo: "/src/assets/images/BM-WHITE-logo.png",
+    image: "/src/assets/images/PortfolioImages/develpment/aureialondon.png",
+    tags: ["Enhancement", "Content Localization", "Brand Strategy"],
+    link: "/case-study/dekoder",
+  },
+  {
+    title: "TISVA",
+    logo: "/path-to-tisva-logo.png",
+    image: "/path-to-tisva-hover-image.jpg",
+    tags: ["Social Media Management", "Branding", "SEO", "UI/UX"],
+    link: "/case-study/tisva",
+  },
+  {
+    title: "TISVA",
+    logo: "/path-to-tisva-logo.png",
+    image: "/path-to-tisva-hover-image.jpg",
+    tags: ["Social Media Management", "Branding", "SEO", "UI/UX"],
+    link: "/case-study/tisva",
+  },
+  {
+    title: "TISVA",
+    logo: "/path-to-tisva-logo.png",
+    image: "/path-to-tisva-hover-image.jpg",
+    tags: ["Social Media Management", "Branding", "SEO", "UI/UX"],
+    link: "/case-study/tisva",
+  },
+];
 
 const Aureialondon = () => {
   return (
@@ -152,7 +192,6 @@ const Aureialondon = () => {
         {/* Bottom Gradient Fade */}
         <div className="absolute bottom-0 left-0 right-0 h-24 sm:h-32 bg-gradient-to-t from-black to-transparent"></div>
       </div>
-
       {/* Success Snapshot Section */}
       <div className="w-full bg-black py-16 lg:py-24 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
@@ -266,7 +305,6 @@ const Aureialondon = () => {
           </div>
         </div>
       </div>
-
       {/* The Story Section */}
       <div className="relative">
         {/* Top Black Fade */}
@@ -317,16 +355,16 @@ const Aureialondon = () => {
         {/* Bottom Black Fade */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-10"></div>
       </div>
-
       {/* Project Banner Section */}
-      <div className="w-full bg-black py-16 lg:py-24 px-4 sm:px-6 lg:px-12">
-        <div className="max-w-7xl mx-auto">
+      {/* Project Banner Section */}
+      <div className="w-full bg-black py-12 lg:py-16 px-4 sm:px-6 lg:px-10">
+        <div className="max-w-6xl mx-auto">
           <div className="relative group overflow-hidden rounded-3xl border-2 border-gray-800 hover:border-[#f4a702]/50 transition-all duration-500">
             {/* Image Container */}
-            <div className="relative h-[450px] sm:h-[500px] lg:h-[500px] xl:h-[500px] overflow-hidden bg-black">
+            <div className="relative h-[260px] sm:h-[320px] lg:h-[360px] overflow-hidden bg-black">
               <img
                 src="/src/assets/images/PortfolioImages/develpment/aureialondon/3.png"
-                alt="Tisva Project Banner"
+                alt="Project Banner"
                 className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
               />
 
@@ -339,7 +377,6 @@ const Aureialondon = () => {
           </div>
         </div>
       </div>
-
       {/* The Barrier Section */}
       <div className="w-full bg-black py-16 lg:py-24 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
@@ -411,12 +448,13 @@ const Aureialondon = () => {
           </div>
         </div>
       </div>
-
       {/* The Roadmap Section */}
-      <div className="w-full bg-black py-16 lg:py-24 px-4 sm:px-6 lg:px-12">
+      {/* pt-8 (mobile) aur lg:pt-12 (desktop) karke spacing kam ki hai */}
+      <div className="w-full bg-black pt-8 pb-16 lg:pt-12 lg:pb-24 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-12 lg:mb-16">
+          {/* mb-8 karke text aur card ka gap thoda kam kiya hai */}
+          <div className="text-center mb-8 lg:mb-12">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white">
               The <span className="text-[#f4a702]">Roadmap</span>
             </h2>
@@ -441,37 +479,263 @@ const Aureialondon = () => {
           </div>
         </div>
       </div>
-
       {/* How We Turned Things Around Section */}
-      <div className="w-full bg-black py-16 lg:py-24 px-4 sm:px-6 lg:px-12">
+      {/* Parent div mein pt-4 (mobile) aur lg:pt-8 (desktop) kar diya hai */}
+      <div className="w-full bg-black pt-4 pb-12 lg:pt-8 lg:pb-16 px-4 sm:px-6 lg:px-10">
         <div className="max-w-7xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-12 lg:mb-16">
+          {/* Section Header: Iski mb-12 ko bhi thoda adjust kiya hai */}
+          <div className="text-center mb-8 lg:mb-12">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white">
               How We Turned Things{" "}
               <span className="text-[#f4a702]">Around?</span>
             </h2>
           </div>
 
-          {/* Banner Image */}
+          {/* Banner Image Container */}
           <div className="relative group overflow-hidden rounded-3xl border-2 border-gray-800 hover:border-[#f4a702]/50 transition-all duration-500">
-            {/* Image Container */}
-            <div className="relative h-[450px] sm:h-[500px] lg:h-[500px] xl:h-[520px] overflow-hidden bg-black">
+            {/* Image Container: Height ko [450px+] se kam karke 1st section jaisa kiya hai */}
+            <div className="relative h-[260px] sm:h-[320px] lg:h-[360px] overflow-hidden bg-black">
               <img
                 src="/src/assets/images/PortfolioImages/develpment/aureialondon/1.png"
                 alt="How We Turned Things Around"
                 className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
               />
-
-              {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
 
-            {/* Glow Effect on Hover */}
+            {/* Glow Effect */}
             <div className="absolute -inset-1 bg-gradient-to-r from-[#f4a702]/30 to-orange-600/30 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700 -z-10"></div>
           </div>
         </div>
       </div>
+      {/* left to right image section  */}
+      {/* Strategy & Visual Transformation Section */}
+      <div className="relative overflow-hidden">
+        {/* Top Fade */}
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black to-transparent z-20"></div>
+
+        {/* Background Image Section */}
+        <div
+          className="relative bg-cover bg-center bg-no-repeat py-12 lg:py-32 overflow-hidden"
+          style={{
+            backgroundImage: `url(${aboutHeroBg})`,
+            backgroundAttachment: "fixed",
+          }}
+        >
+          {/* Dark Luxury Overlay */}
+          <div className="absolute inset-0 bg-black/75"></div>
+
+          {/* Side Gradients */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-80"></div>
+
+          {/* Content Container */}
+          <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 space-y-20 lg:space-y-40">
+            {/* 1. Visual Transformation */}
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              {/* Mobile: Order 1 (Pehle Content) | Desktop: Order 1 */}
+              <div className="space-y-5 order-1 lg:order-1 text-left">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
+                  Visual <span className="text-[#f4a702]">Transformation</span>
+                </h2>
+                <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                  Updated the brand's social media feed with a luxury-inspired
+                  color palette to enhance the visual appeal and convey a
+                  premium feel. The goal was to create a cohesive brand identity
+                  across all platforms.
+                </p>
+                <div className="h-1 w-20 bg-[#f4a702] rounded-full"></div>
+              </div>
+
+              {/* Mobile: Order 2 (Baad mein Image) | Desktop: Order 2 */}
+              <div className="relative group order-2 lg:order-2">
+                <div className="absolute -inset-1 bg-[#f4a702]/20 blur-xl rounded-3xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
+                <div className="relative border-2 border-gray-800 rounded-3xl overflow-hidden bg-black aspect-square">
+                  <img
+                    src="/src/assets/images/PortfolioImages/develpment/aureialondon/right.webp"
+                    alt="Visual Transformation"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* 2. Integrated Communication Strategy */}
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              {/* Mobile: Order 1 (Pehle Content) | Desktop: Order 2 (Text Right Side) */}
+              <div className="space-y-5 order-1 lg:order-2 text-left">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white lg:text-left">
+                  Integrated{" "}
+                  <span className="text-[#f4a702]">Communication</span> Strategy
+                </h2>
+                <p className="text-gray-300 text-base sm:text-lg leading-relaxed lg:text-left">
+                  Ensured that copy, captions, and messaging highlighted the
+                  same core message, focusing on product craftsmanship,
+                  features, and unique selling points.
+                </p>
+                <div className="h-1 w-20 bg-[#f4a702] rounded-full lg:ml-0"></div>
+              </div>
+
+              {/* Mobile: Order 2 (Baad mein Image) | Desktop: Order 1 (Image Left Side) */}
+              <div className="relative group order-2 lg:order-1">
+                <div className="absolute -inset-1 bg-[#f4a702]/20 blur-xl rounded-3xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
+                <div className="relative border-2 border-gray-800 rounded-3xl overflow-hidden bg-black aspect-square">
+                  <img
+                    src="/src/assets/images/PortfolioImages/develpment/aureialondon/right.webp"
+                    alt="Communication Strategy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Fade */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent z-20"></div>
+      </div>
+      {/*  */}
+      {/* Digital Promotion Section */}
+      <div className="w-full bg-black py-16 lg:py-24 px-4 sm:px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+              Digital Promotion for{" "}
+              <span className="text-[#f4a702]">TISVA Studio</span>{" "}
+              <br className="hidden lg:block" />
+              and Store Launches
+            </h2>
+            <p className="text-gray-400 text-base sm:text-lg max-w-4xl mx-auto leading-relaxed">
+              Implemented instant plans digitally to create awareness and
+              generate buzz around TISVA Studio openings and store launches.
+              Utilized contest plans to encourage audience participation, drive
+              engagement, and amplify brand visibility. Utilized YouTube as a
+              platform to showcase TISVA's messaging strategy through
+              captivating videos, resulting in millions of views and increased
+              brand exposure.
+            </p>
+          </div>
+
+          {/* Promotion Cards / Showcase */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Promotion Image 1 */}
+            <div className="group relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#f4a702]/20 to-orange-600/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+              <div className="relative aspect-[4/5] sm:aspect-video lg:aspect-[4/3] rounded-3xl overflow-hidden border-2 border-gray-800 group-hover:border-[#f4a702]/50 transition-all duration-500">
+                <img
+                  src="/src/assets/images/PortfolioImages/develpment/aureialondon/StoreLaunches.png"
+                  alt="TISVA Studio Launch"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                />
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
+              </div>
+            </div>
+
+            {/* Promotion Image 2 */}
+            <div className="group relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#f4a702]/20 to-orange-600/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+              <div className="relative aspect-[4/5] sm:aspect-video lg:aspect-[4/3] rounded-3xl overflow-hidden border-2 border-gray-800 group-hover:border-[#f4a702]/50 transition-all duration-500">
+                <img
+                  src="/src/assets/images/PortfolioImages/develpment/aureialondon/StoreLaunches2.png"
+                  alt="Digital Campaign"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                />
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* story section  */}
+      <section className="relative overflow-hidden">
+        {/* Top Black Fade - Pichle section ke saath smooth blend karne ke liye */}
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent z-10"></div>
+
+        <div
+          className="relative bg-cover bg-center bg-no-repeat py-20 lg:py-32"
+          style={{
+            backgroundImage: `url(${aboutHeroBg})`,
+            backgroundAttachment: "fixed",
+          }}
+        >
+          {/* Overlay - "The Story of Tisva" section jaisa same gradient */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/60"></div>
+
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="space-y-16 lg:space-y-24">
+              {/* 1. Client Testimonial */}
+              <div className="text-center max-w-4xl mx-auto space-y-5">
+                <div className="relative inline-block px-4">
+                  <p className="text-white text-lg sm:text-xl lg:text-2xl font-semibold leading-relaxed italic">
+                    "Thanks to digiPanda, our engagement levels skyrocketed.
+                    Their expertise in digital marketing not only enhanced our
+                    social media presence but also led to a significant increase
+                    in store visits and conversions. A game-changing partnership
+                    for us!"
+                  </p>
+                </div>
+
+                <div className="pt-1">
+                  <div className="h-[1px] w-12 bg-[#f4a702] mx-auto mb-3 opacity-80"></div>
+                  <h4 className="text-gray-400 font-bold text-xs lg:text-sm tracking-[0.2em] uppercase">
+                    - Tisva Brand Manager
+                  </h4>
+                </div>
+              </div>
+
+              {/* 2. Success Story CTA Banner */}
+              <div className="relative group overflow-hidden rounded-[30px] lg:rounded-[45px] border border-gray-800 hover:border-[#f4a702]/50 max-w-4xl mx-auto shadow-2xl transition-all duration-500 hover:scale-[1.01]">
+                {/* Inner Content with Luxury Black Overlay */}
+                <div className="relative py-12 lg:py-16 px-6 text-center">
+                  {/* Dark tint inside the banner card */}
+                  <div className="absolute inset-0 bg-black/40 backdrop-blur-sm group-hover:bg-black/20 transition-all duration-700"></div>
+
+                  <div className="relative z-10 space-y-6 lg:space-y-8">
+                    <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
+                      Ready to Be <br className="sm:block hidden" />
+                      Our Next{" "}
+                      <span className="text-[#f4a702]">Success Story?</span>
+                    </h2>
+
+                    <div className="flex justify-center pt-1">
+                      {/* Updated to Link Component for smooth navigation */}
+                      <Link
+                        to="/contact"
+                        className="group/btn bg-[#f4a702] text-black font-extrabold py-3 px-8 lg:py-4 lg:px-12 rounded-full flex items-center gap-3 hover:bg-white transition-all duration-300 shadow-xl shadow-[#f4a702]/20 active:scale-95 no-underline decoration-transparent"
+                      >
+                        <span className="text-sm lg:text-base">
+                          Let's Make It Happen!
+                        </span>
+                        <svg
+                          className="w-4 h-4 lg:w-5 lg:h-5 group-hover/btn:translate-x-1.5 transition-transform duration-300"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2.5}
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Black Fade - Next section ke saath smooth blend karne ke liye */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-10"></div>
+      </section>
+      {/* // Component ke andar */}
+      <RelatedCaseStudies caseStudies={caseStudyData} />
     </div>
   );
 };

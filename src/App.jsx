@@ -29,7 +29,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 // import PhoneButton from "./components/PhoneButton";
 import PortfolioSlider from "./pages/PortfolioSlider";
 import CaseStudies from "./pages/CaseStudies";
-import Aureialondon from "./pages/caseStudiesProjectPages/Aureialondon";
+import Aureialondon from "./pages/caseStudiesProjectPages/Aureialondon/Aureialondon";
 
 function App() {
   const [loading, setLoading] = useState(true);

@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+/* :root {
+  --font-primary: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+} */
+
+
+/* <h1 className="font-[var(--font-primary)] text-5xl font-semibold">
+  BrandMingo Digital Agency
+</h1> */
