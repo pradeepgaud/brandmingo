@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
+const images = import.meta.glob(
+  "../assets/images/PortfolioImages/**/*.{png,jpg,jpeg}",
+  { eager: true },
+);
+
+const getImage = (path) => {
+  return images[`../assets/images/${path}`]?.default;
+};
+
 const HeroPortfolioSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeTab, setActiveTab] = useState("all");
@@ -14,143 +23,55 @@ const HeroPortfolioSlider = () => {
       id: 1,
       title: "E-Commerce Platform",
       subtitle: "Boosting Sales & Conversions",
-      description:
-        "Discover how we transformed a traditional retail business into a thriving online store with seamless user experience, optimized checkout, and powerful analytics.",
-      image: "/src/assets/images/PortfolioImages/develpment/aureialondon.png",
+      description: "Discover how we transformed...",
+      image: getImage("PortfolioImages/develpment/aureialondon.png"),
       category: "development",
       images: [
-        "/src/assets/images//PortfolioImages/develpment/aureialondon.png",
-        "/src/assets/images/PortfolioImages/develpment/aureialondon/1.png",
-        "/src/assets/images/PortfolioImages/develpment/aureialondon/2.png",
-        "/src/assets/images/PortfolioImages/develpment/aureialondon/3.png",
+        getImage("PortfolioImages/develpment/aureialondon.png"),
+        getImage("PortfolioImages/develpment/aureialondon/1.png"),
+        getImage("PortfolioImages/develpment/aureialondon/2.png"),
+        getImage("PortfolioImages/develpment/aureialondon/3.png"),
       ],
     },
+
     {
       id: 2,
       title: "Brand Identity Design",
       subtitle: "Creating Memorable Impressions",
-      description:
-        "Explore our comprehensive branding solution that elevated a startup's market presence through strategic design, consistent messaging, and impactful visuals.",
-      image: "/src/assets/images/PortfolioImages/design/Frame_6[1].png",
+      description: "Explore our branding solution...",
+      image: getImage("PortfolioImages/design/Frame_6[1].png"),
       category: "design",
-      images: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
+      images: [],
     },
+
     {
       id: 3,
       title: "Mobile App Development",
       subtitle: "Innovation in Your Pocket",
-      description:
-        "See how we developed a cutting-edge mobile application that revolutionized customer engagement with intuitive design and seamless functionality.",
-      image: "/src/assets/images/PortfolioImages/develpment/Thumbnail.png",
+      description: "See how we developed...",
+      image: getImage("PortfolioImages/develpment/Thumbnail.png"),
       category: "development",
-      images: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
+      images: [],
     },
+
     {
       id: 4,
       title: "Social Media Campaign",
       subtitle: "Viral Growth & Engagement",
-      description:
-        "Discover our data-driven social media strategy that increased brand awareness by 300% and generated qualified leads consistently.",
-      image: "/src/assets/images/PortfolioImages/marketing/marketing1.png",
+      description: "Discover our strategy...",
+      image: getImage("PortfolioImages/marketing/marketing1.png"),
       category: "marketing",
-      images: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
+      images: [],
     },
+
     {
       id: 5,
       title: "Custom Web Application",
       subtitle: "Streamlined Business Operations",
-      description:
-        "Learn how our custom-built web application automated complex workflows, reduced costs by 40%, and improved team productivity significantly.",
-      image:
-        "/src/assets/images/PortfolioImages/develpment/vishalimitations.png",
+      description: "Learn how our app...",
+      image: getImage("PortfolioImages/develpment/vishalimitations.png"),
       category: "development",
-      images: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
-    },
-    {
-      id: 6,
-      title: "UI/UX Design",
-      subtitle: "User-Centered Excellence",
-      description:
-        "A complete redesign that improved user satisfaction by 60% and created an intuitive, beautiful interface that users love.",
-      image: "/api/placeholder/600/400",
-      category: "design",
-      images: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
-    },
-    {
-      id: 7,
-      title: "Email Marketing Campaign",
-      subtitle: "Converting Subscribers to Customers",
-      description:
-        "Strategic email campaigns that achieved 45% open rates and drove significant revenue growth through personalized messaging.",
-      image: "/api/placeholder/600/400",
-      category: "marketing",
-      images: ["/api/placeholder/800/600", "/api/placeholder/800/600"],
-    },
-    {
-      id: 8,
-      title: "Logo & Brand Guide",
-      subtitle: "Visual Identity Creation",
-      description:
-        "Comprehensive branding package including logo design, color palette, typography, and brand guidelines for consistent communication.",
-      image: "/api/placeholder/600/400",
-      category: "design",
-      images: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
-    },
-    {
-      id: 9,
-      title: "React Dashboard",
-      subtitle: "Data Visualization Platform",
-      description:
-        "Built a powerful analytics dashboard with real-time data visualization, helping businesses make data-driven decisions.",
-      image: "/api/placeholder/600/400",
-      category: "development",
-      images: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
-    },
-    {
-      id: 10,
-      title: "Content Marketing Strategy",
-      subtitle: "SEO & Engagement Boost",
-      description:
-        "Developed a content strategy that increased organic traffic by 250% and established thought leadership in the industry.",
-      image: "/api/placeholder/600/400",
-      category: "marketing",
-      images: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
+      images: [],
     },
   ];
 

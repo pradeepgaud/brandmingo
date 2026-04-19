@@ -2,6 +2,18 @@ import React, { useState } from "react";
 import gradientBg from "/src/assets/images/Home/bg-home2.png";
 
 function ContactClients() {
+  const logos = import.meta.glob(
+    "../assets/images/ClientLogos/*.{png,jpg,jpeg,webp}",
+    { eager: true },
+  );
+
+  const getLogo = (name) => {
+    return (
+      logos[`../assets/images/ClientLogos/${name}.png`]?.default ||
+      logos[`../assets/images/ClientLogos/${name}.jpg`]?.default ||
+      logos[`../assets/images/ClientLogos/${name}.webp`]?.default
+    );
+  };
   const [formData, setFormData] = useState({
     fullName: "",
     service: "",
@@ -14,27 +26,26 @@ function ContactClients() {
   const [submitMessage, setSubmitMessage] = useState("");
 
   const clients = [
-    { name: "1", logo: "/src/assets/images/ClientLogos/1.png" },
-    { name: "2", logo: "/src/assets/images/ClientLogos/2.png" },
-    { name: "3", logo: "/src/assets/images/ClientLogos/3.png" },
-    { name: "4", logo: "/src/assets/images/ClientLogos/4.png" },
-    { name: "5", logo: "/src/assets/images/ClientLogos/5.png" },
-    { name: "6", logo: "/src/assets/images/ClientLogos/6.png" },
-    { name: "7", logo: "/src/assets/images/ClientLogos/7.png" },
-    { name: "8", logo: "/src/assets/images/ClientLogos/8.png" },
-    { name: "9", logo: "/src/assets/images/ClientLogos/9.png" },
-    { name: "10", logo: "/src/assets/images/ClientLogos/10.png" },
-    { name: "11", logo: "/src/assets/images/ClientLogos/11.png" },
-    { name: "12", logo: "/src/assets/images/ClientLogos/12.png" },
-    { name: "13", logo: "/src/assets/images/ClientLogos/13.png" },
-    { name: "14", logo: "/src/assets/images/ClientLogos/14.png" },
-    { name: "15", logo: "/src/assets/images/ClientLogos/15.png" },
-    { name: "16", logo: "/src/assets/images/ClientLogos/16.png" },
-    { name: "17", logo: "/src/assets/images/ClientLogos/17.png" },
-    { name: "18", logo: "/src/assets/images/ClientLogos/18.png" },
-    { name: "19", logo: "/src/assets/images/ClientLogos/19.png" },
+    { name: "1" },
+    { name: "2" },
+    { name: "3" },
+    { name: "4" },
+    { name: "5" },
+    { name: "6" },
+    { name: "7" },
+    { name: "8" },
+    { name: "9" },
+    { name: "10" },
+    { name: "11" },
+    { name: "12" },
+    { name: "13" },
+    { name: "14" },
+    { name: "15" },
+    { name: "16" },
+    { name: "17" },
+    { name: "18" },
+    { name: "19" },
   ];
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -269,7 +280,7 @@ function ContactClients() {
                       className="group relative bg-white/95 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-[#f4a702]/60 transition-all duration-300 aspect-square flex items-center justify-center cursor-pointer hover:bg-white shadow-lg hover:shadow-xl hover:shadow-[#f4a702]/30 hover:scale-105"
                     >
                       <img
-                        src={client.logo}
+                        src={getLogo(client.name)}
                         alt={client.name}
                         className="max-w-full max-h-full object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-300"
                       />

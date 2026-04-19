@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import img1 from "../assets/images/TestimonialImages/images-1.webp";
+import img2 from "../assets/images/TestimonialImages/images-2.jpg";
+import img3 from "../assets/images/TestimonialImages/images-3.jpg";
 
 function Testimonials() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -7,41 +10,22 @@ function Testimonials() {
     {
       name: "Amit Goyal",
       company: "client",
-      logo: "/src/assets/images/TestimonialImages/images-1.webp",
-      text: "SChoosing Brandmingo as our digital marketing agency was one of the best decisions we made for our business. Their expertise and strategic insights have transformed our online brand image and increased our website traffic significantly.",
+      logo: img1,
+      text: "Choosing Brandmingo as our digital marketing agency was one of the best decisions...",
     },
     {
       name: "Rahul Jain",
       company: "client",
-      logo: "/src/assets/images/TestimonialImages/images-2.jpg",
-      text: "Working with Brandmingo has been a game-changer for our business. Their integrated digital marketing strategies have significantly improved our online visibility and customer engagement. They've not only increased our website traffic but also our revenue.",
+      logo: img2,
+      text: "Working with Brandmingo has been a game-changer for our business...",
     },
     {
       name: "Arun Kumar",
       company: "client",
-      logo: "/src/assets/images/TestimonialImages/images-3.jpg",
-      text: "Brandmingo has been an invaluable partner in growing our brand online. Their dedication, innovative strategies, and attention to detail have resulted in remarkable ROI.  Thanks to their efforts, our brand is thriving in the digital space. Excellent work!",
+      logo: img3,
+      text: "Brandmingo has been an invaluable partner in growing our brand online...",
     },
-    // {
-    //   name: "Sarah Johnson",
-    //   company: "Creative Studio",
-    //   logo: "/testimonials/creative-studio.png",
-    //   text: "The team at Digipanda exceeded all our expectations. From the initial consultation to the final delivery, everything was handled professionally.",
-    // },
-    // {
-    //   name: "Michael Chen",
-    //   company: "Digital Ventures",
-    //   logo: "/testimonials/digital-ventures.png",
-    //   text: "Outstanding service and incredible results. The Digipanda team brought our vision to life beyond what we imagined possible.",
-    // },
-    // {
-    //   name: "Emma Wilson",
-    //   company: "Brand Factory",
-    //   logo: "/testimonials/brand-factory.png",
-    //   text: "Professional, creative, and always delivering on time. Working with Digipanda has transformed our digital presence completely.",
-    // },
   ];
-
   // Duplicate testimonials for infinite scroll effect
   const duplicatedTestimonials = [...testimonials, ...testimonials];
 
