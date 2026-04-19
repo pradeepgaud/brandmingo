@@ -29,7 +29,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 // import PhoneButton from "./components/PhoneButton";
 import PortfolioSlider from "./pages/PortfolioSlider";
 import CaseStudies from "./pages/CaseStudies";
-import Aureialondon from "./pages/caseStudiesProjectPages/Aureialondon";
+// import Aureialondon from "./pages/caseStudiesProjectPages/Aureialondon.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -82,7 +82,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/portfolio" element={<PortfolioSlider />} />
-        <Route path="/case-study/aureialondon" element={<Aureialondon />} />
+        {/* <Route path="/case-study/aureialondon" element={<Aureialondon />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <WhatsAppButton />
