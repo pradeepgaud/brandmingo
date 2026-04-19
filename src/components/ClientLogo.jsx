@@ -1,27 +1,46 @@
 import React from "react";
+import logo1 from "../assets/images/ClientLogos/1.png";
+import logo2 from "../assets/images/ClientLogos/2.png";
+import logo3 from "../assets/images/ClientLogos/3.png";
+import logo4 from "../assets/images/ClientLogos/4.png";
+import logo5 from "../assets/images/ClientLogos/5.png";
+import logo6 from "../assets/images/ClientLogos/6.png";
+import logo7 from "../assets/images/ClientLogos/7.png";
+import logo8 from "../assets/images/ClientLogos/8.png";
+import logo9 from "../assets/images/ClientLogos/9.png";
+import logo10 from "../assets/images/ClientLogos/10.png";
+import logo11 from "../assets/images/ClientLogos/11.png";
+import logo12 from "../assets/images/ClientLogos/12.png";
+import logo13 from "../assets/images/ClientLogos/13.png";
+import logo14 from "../assets/images/ClientLogos/14.png";
+import logo15 from "../assets/images/ClientLogos/15.png";
+import logo16 from "../assets/images/ClientLogos/16.png";
+import logo17 from "../assets/images/ClientLogos/17.png";
+import logo18 from "../assets/images/ClientLogos/18.png";
+import logo19 from "../assets/images/ClientLogos/19.png";
 
 export default function ClientLogo() {
   // ----- EDIT your logos here -----
   const items = [
-    { src: "/src/assets/images/ClientLogos/1.png", alt: "ag-logo" },
-    { src: "/src/assets/images/ClientLogos/2.png", alt: "ar-logo" },
-    { src: "/src/assets/images/ClientLogos/3.png", alt: "c-logo" },
-    { src: "/src/assets/images/ClientLogos/4.png", alt: "cx-logo" },
-    { src: "/src/assets/images/ClientLogos/5.png", alt: "g20-logo" },
-    { src: "/src/assets/images/ClientLogos/6.png", alt: "lul-logo" },
-    { src: "/src/assets/images/ClientLogos/7.png", alt: "mm-logo" },
-    { src: "/src/assets/images/ClientLogos/8.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/9.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/10.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/11.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/12.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/13.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/14.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/15.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/16.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/17.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/18.png", alt: "rd-logo" },
-    { src: "/src/assets/images/ClientLogos/19.png", alt: "rd-logo" },
+    { src: logo1, alt: "ag-logo" },
+    { src: logo2, alt: "ar-logo" },
+    { src: logo3, alt: "c-logo" },
+    { src: logo4, alt: "cx-logo" },
+    { src: logo5, alt: "g20-logo" },
+    { src: logo6, alt: "lul-logo" },
+    { src: logo7, alt: "mm-logo" },
+    { src: logo8, alt: "rd-logo" },
+    { src: logo9, alt: "rd-logo" },
+    { src: logo10, alt: "rd-logo" },
+    { src: logo11, alt: "rd-logo" },
+    { src: logo12, alt: "rd-logo" },
+    { src: logo13, alt: "rd-logo" },
+    { src: logo14, alt: "rd-logo" },
+    { src: logo15, alt: "rd-logo" },
+    { src: logo16, alt: "rd-logo" },
+    { src: logo17, alt: "rd-logo" },
+    { src: logo18, alt: "rd-logo" },
+    { src: logo19, alt: "rd-logo" },
   ];
 
   // speed & size controls

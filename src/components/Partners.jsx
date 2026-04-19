@@ -1,18 +1,22 @@
 import React from "react";
-import gradientBg from "/src/assets/images/Home/home-5.png";
+import gradientBg from "../assets/images/Home/home-5.png";
+
+import shopifyLogo from "../assets/images/Partners/Shopify-agency.png";
+import metaLogo from "../assets/images/Partners/partner3.png";
+import googleLogo from "../assets/images/Partners/Google-Partner-Logo.png";
 
 function Partners() {
   const partners = [
     {
-      image: "/src/assets/images/Partners/Shopify-agency.png",
+      image: shopifyLogo,
       alt: "Shopify Partner",
     },
     {
-      image: "/src/assets/images/Partners/partner3.png",
+      image: metaLogo,
       alt: "Meta Business Partner",
     },
     {
-      image: "/src/assets/images/Partners/Google-Partner-Logo.png",
+      image: googleLogo,
       alt: "Google Partner",
     },
   ];

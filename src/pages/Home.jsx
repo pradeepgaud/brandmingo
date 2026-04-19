@@ -10,6 +10,7 @@ import ContactClients from "../components/ContactClients";
 import Testimonials from "../components/Testimonials";
 // import PortfolioSlider from "./PortfolioSlider";
 import HeroPortfolioSlider from "../components/HeroPortfolioSlider";
+import aboutImg from "../assets/images/About/about-us.jpg";
 
 function Home() {
   return (
@@ -96,7 +97,7 @@ function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
 
                     <img
-                      src="/src/assets/images/About/about-us.jpg"
+                      src={aboutImg}
                       alt="Our studio"
                       className="h-[420px] w-full object-cover md:h-[520px] lg:h-[560px] transform group-hover:scale-105 transition-transform duration-700"
                     />

@@ -1,14 +1,18 @@
 import React from "react";
+import img1 from "../assets/images/WhyChooseUs/1.jpg";
+import img2 from "../assets/images/WhyChooseUs/2.jpg";
+import img3 from "../assets/images/WhyChooseUs/3.jpg";
+import img4 from "../assets/images/WhyChooseUs/4.jpg";
 
 function WhyChooseUs() {
   const ACCENT = "#f59e0b"; // your brand orange
 
   // Replace these with your own 4 images
   const IMAGES = [
-    { src: "/src/assets/images/WhyChooseUs/1.jpg", alt: "Team portrait 1" },
-    { src: "/src/assets/images/WhyChooseUs/2.jpg", alt: "Team portrait 1" },
-    { src: "/src/assets/images/WhyChooseUs/3.jpg", alt: "Team portrait 1" },
-    { src: "/src/assets/images/WhyChooseUs/4.jpg", alt: "Team portrait 1" },
+    { src: img1, alt: "Team portrait 1" },
+    { src: img2, alt: "Team portrait 2" },
+    { src: img3, alt: "Team portrait 3" },
+    { src: img4, alt: "Team portrait 4" },
   ];
 
   return (

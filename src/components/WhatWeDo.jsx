@@ -1,4 +1,5 @@
 import React from "react";
+import teamImg from "../assets/images/2.jpg";
 
 export default function WhatWeDo() {
   const ACCENT = "#f4a702"; // brand color
@@ -51,8 +52,13 @@ export default function WhatWeDo() {
         {/* Headings */}
         <div className="space-y-2">
           <div className="flex items-center gap-4">
-            <img
+            {/* <img
               src="/src/assets/images/2.jpg"
+              alt="Team brainstorming"
+              className="h-12 w-28 rounded-full object-cover ring-2 ring-[#f4a702]/30 shadow-lg shadow-[#f4a702]/20 md:h-14 md:w-36 lg:h-16 lg:w-40"
+            /> */}
+            <img
+              src={teamImg}
               alt="Team brainstorming"
               className="h-12 w-28 rounded-full object-cover ring-2 ring-[#f4a702]/30 shadow-lg shadow-[#f4a702]/20 md:h-14 md:w-36 lg:h-16 lg:w-40"
             />
