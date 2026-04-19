@@ -6,7 +6,7 @@ import ContactClients from "../../components/ContactClients";
 import faqBg from "/src/assets/images/Home/bg-home2.png";
 // import PrimaryButton from "../components/PrimaryButton.jsx";
 // import FAQSection from "../../components/FAQSection";
-
+import { Link } from "react-router-dom";
 function Marketing() {
   // SLIDER CARDS with relevant icons
   const sliderCards = [
@@ -204,38 +204,43 @@ function Marketing() {
             </span>
           </h2>
 
-          {/* Merketing Services List */}
-          <div className="rounded-2xl sm:rounded-3xl bg-gradient-to-br from-gray-900/80 to-black border border-gray-800 overflow-hidden">
+          {/* Marketing Services List */}
+          <div className="rounded-2xl sm:rounded-3xl bg-gradient-to-br from-gray-900/80 to-black border border-gray-800 overflow-hidden divide-y divide-gray-800">
             {[
-              "Ads And Campaigns",
-              "Social Media Management",
-              "SEO Optimizing",
-              "Ecommerce Account Management",
+              { name: "Ads And Campaigns", url: "/services/ads-and-campaigns" },
+              {
+                name: "Social Media Management",
+                url: "/services/social-media-marketing",
+              },
+              { name: "SEO Optimizing", url: "/services/seo-optimizing" },
+              {
+                name: "Ecommerce Account Management",
+                url: "/services/e-commerce-account-management",
+              },
             ].map((service, idx) => (
-              <a
+              <Link
                 key={idx}
-                href="#"
-                className="group block border-b border-gray-700 last:border-b-0 hover:border-[#f4a702] transition-all duration-300"
+                to={service.url}
+                className="group block hover:border-[#f4a702] transition-all duration-300"
               >
                 <div className="flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4 sm:py-5 lg:py-6 group-hover:bg-gradient-to-r group-hover:from-[#f4a702] group-hover:via-orange-400 group-hover:to-[#f4a702] transition-all duration-300">
                   <div className="flex items-center gap-3 sm:gap-4">
-                    <span className="text-base sm:text-lg lg:text-xl font-semibold text-gray-400 group-hover:text-white transition-colors duration-300">
+                    <span className="text-base sm:text-lg lg:text-xl font-semibold text-gray-400 group-hover:text-black transition-colors duration-300">
                       {`0${idx + 1}`}
                     </span>
-                    <span className="text-base sm:text-lg lg:text-xl font-semibold text-white group-hover:text-white transition-colors duration-300">
-                      {service}
+                    <span className="text-base sm:text-lg lg:text-xl font-semibold text-white group-hover:text-black transition-colors duration-300">
+                      {service.name}
                     </span>
                   </div>
                   <span className="text-lg sm:text-xl text-white group-hover:text-black transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                     ↗
                   </span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
       </div>
-
       {/* ---------------- THIRD SECTION ---------------- */}
       {/* SLIDER SECTION - Infinite Loop */}
       <div className="w-full bg-black py-20 px-4 sm:px-6 lg:px-12">
@@ -317,7 +322,7 @@ function Marketing() {
                       </p>
                     </div>
                   </div>
-                )
+                ),
               )}
             </div>
           </div>

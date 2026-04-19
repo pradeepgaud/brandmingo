@@ -343,17 +343,19 @@ function About() {
             {/* Infinite Scroll Marquee */}
             <div className="relative overflow-hidden">
               {/* Top Row - Left to Right */}
+              {/* Note: speed is controlled via 'animate-scroll-left' class in CSS/Tailwind config */}
               <div className="flex overflow-hidden select-none gap-4 mb-8 hover:[&>div]:pause-animation">
                 <div className="flex animate-scroll-left">
                   {[...clients, ...clients].map((client, index) => (
                     <div
                       key={index}
-                      className="group flex-shrink-0 mx-4 p-8 rounded-2xl bg-gradient-to-br from-gray-900/50 to-black border border-gray-700/50 hover:border-[#f4a702]/60 transition-all duration-300 w-[200px] h-[120px] flex items-center justify-center"
+                      className="group flex-shrink-0 mx-4 p-6 rounded-2xl bg-gradient-to-br from-gray-900/50 to-black border border-gray-700/50 hover:border-[#f4a702]/60 transition-all duration-300 w-[220px] h-[140px] flex items-center justify-center"
                     >
                       <img
                         src={client.logo}
                         alt={client.name}
-                        className="w-auto h-auto max-w-full max-h-20 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 group-hover:scale-110 transition-all duration-300"
+                        /* Height increased from max-h-20 to max-h-24 */
+                        className="w-auto h-auto max-w-full max-h-24 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 group-hover:scale-110 transition-all duration-300"
                         onError={(e) => {
                           e.target.style.display = "none";
                           console.log("Logo not found:", client.logo);
@@ -373,12 +375,13 @@ function About() {
                   ].map((client, index) => (
                     <div
                       key={index}
-                      className="group flex-shrink-0 mx-4 p-8 rounded-2xl bg-gradient-to-br from-gray-900/50 to-black border border-gray-700/50 hover:border-[#f4a702]/60 transition-all duration-300 w-[200px] h-[120px] flex items-center justify-center"
+                      className="group flex-shrink-0 mx-4 p-6 rounded-2xl bg-gradient-to-br from-gray-900/50 to-black border border-gray-700/50 hover:border-[#f4a702]/60 transition-all duration-300 w-[220px] h-[140px] flex items-center justify-center"
                     >
                       <img
                         src={client.logo}
                         alt={client.name}
-                        className="w-auto h-auto max-w-full max-h-20 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 group-hover:scale-110 transition-all duration-300"
+                        /* Height increased from max-h-20 to max-h-24 */
+                        className="w-auto h-auto max-w-full max-h-24 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 group-hover:scale-110 transition-all duration-300"
                         onError={(e) => {
                           e.target.style.display = "none";
                           console.log("Logo not found:", client.logo);

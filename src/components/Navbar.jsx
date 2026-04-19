@@ -700,7 +700,7 @@ import ServicesMegaMenu from "./ServicesMegaMenu";
 const NAV_ITEMS = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about" },
-  { label: "Blog", to: "/blog" },
+  // { label: "Blog", to: "/blog" },
   { label: "Portfolio", to: "/portfolio" },
   { label: "Case-Studies", to: "/case-studies" },
   { label: "Contact", to: "/contact" },
