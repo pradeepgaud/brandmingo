@@ -4,88 +4,50 @@ import React from "react";
 import aboutHeroBg from "/src/assets/images/Home/bg-home2.png";
 import WhyUs from "../components/WhyUs";
 import ContactClients from "../components/ContactClients";
+import logo1 from "../assets/images/ClientLogos/1.png";
+import logo2 from "../assets/images/ClientLogos/2.png";
+import logo3 from "../assets/images/ClientLogos/3.png";
+import logo4 from "../assets/images/ClientLogos/4.png";
+import logo5 from "../assets/images/ClientLogos/5.png";
+import logo6 from "../assets/images/ClientLogos/6.png";
+import logo7 from "../assets/images/ClientLogos/7.png";
+import logo8 from "../assets/images/ClientLogos/8.png";
+import logo9 from "../assets/images/ClientLogos/9.png";
+import logo10 from "../assets/images/ClientLogos/10.png";
+import logo11 from "../assets/images/ClientLogos/11.png";
+import logo12 from "../assets/images/ClientLogos/12.png";
+import logo13 from "../assets/images/ClientLogos/13.png";
+import logo14 from "../assets/images/ClientLogos/14.png";
+import logo15 from "../assets/images/ClientLogos/15.png";
+import logo16 from "../assets/images/ClientLogos/16.png";
+import logo17 from "../assets/images/ClientLogos/17.png";
+import logo18 from "../assets/images/ClientLogos/18.png";
+import logo19 from "../assets/images/ClientLogos/19.png";
 
 function About() {
   // Client logos array
-  const clients = [
-    {
-      name: "1",
-      logo: "/src/assets/images/ClientLogos/1.png",
-    },
-    {
-      name: "2",
-      logo: "/src/assets/images/ClientLogos/2.png",
-    },
-    {
-      name: "3",
-      logo: "/src/assets/images/ClientLogos/3.png",
-    },
-    {
-      name: "4",
-      logo: "/src/assets/images/ClientLogos/4.png",
-    },
-    {
-      name: "5",
-      logo: "/src/assets/images/ClientLogos/5.png",
-    },
-    {
-      name: "6",
-      logo: "/src/assets/images/ClientLogos/6.png",
-    },
-    {
-      name: "7",
-      logo: "/src/assets/images/ClientLogos/7.png",
-    },
-    {
-      name: "8",
-      logo: "/src/assets/images/ClientLogos/8.png",
-    },
-    {
-      name: "9",
-      logo: "/src/assets/images/ClientLogos/9.png",
-    },
-    {
-      name: "10",
-      logo: "/src/assets/images/ClientLogos/10.png",
-    },
-    {
-      name: "11",
-      logo: "/src/assets/images/ClientLogos/11.png",
-    },
-    {
-      name: "12",
-      logo: "/src/assets/images/ClientLogos/12.png",
-    },
-    {
-      name: "13",
-      logo: "/src/assets/images/ClientLogos/13.png",
-    },
-    {
-      name: "14",
-      logo: "/src/assets/images/ClientLogos/14.png",
-    },
-    {
-      name: "15",
-      logo: "/src/assets/images/ClientLogos/15.png",
-    },
-    {
-      name: "16",
-      logo: "/src/assets/images/ClientLogos/16.png",
-    },
-    {
-      name: "17",
-      logo: "/src/assets/images/ClientLogos/17.png",
-    },
-    {
-      name: "18",
-      logo: "/src/assets/images/ClientLogos/18.png",
-    },
-    {
-      name: "19",
-      logo: "/src/assets/images/ClientLogos/19.png",
-    },
-  ];
 
+  const clients = [
+    { name: "1", logo: logo1 },
+    { name: "2", logo: logo2 },
+    { name: "3", logo: logo3 },
+    { name: "4", logo: logo4 },
+    { name: "5", logo: logo5 },
+    { name: "6", logo: logo6 },
+    { name: "7", logo: logo7 },
+    { name: "8", logo: logo8 },
+    { name: "9", logo: logo9 },
+    { name: "10", logo: logo10 },
+    { name: "11", logo: logo11 },
+    { name: "12", logo: logo12 },
+    { name: "13", logo: logo13 },
+    { name: "14", logo: logo14 },
+    { name: "15", logo: logo15 },
+    { name: "16", logo: logo16 },
+    { name: "17", logo: logo17 },
+    { name: "18", logo: logo18 },
+    { name: "19", logo: logo19 },
+  ];
   return (
     <div className="min-h-screen text-white relative overflow-hidden">
       {/* ---------------- HERO SECTION ---------------- */}
